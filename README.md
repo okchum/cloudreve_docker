@@ -1,4 +1,4 @@
-## Docker for Cloudreve
+## Docker Compose for Cloudreve
 
 Insprited by [wuma/cloudreve-docker](https://gitee.com/wuma/cloudreve-docker).
 
@@ -34,3 +34,8 @@ Download Path: /tmp
 ./etc/conf.ini: configuration for Cloudreve
 ./db: database file if using Sqllite
 ```
+
+
+### Todo
+
+* May reduce the demension of the image or use Alpine.
