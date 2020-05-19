@@ -1,0 +1,15 @@
+version: "3"
+services:
+  cloudreve:
+    container_name: cloudreve
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./logs:/core/logs
+      - ./uploads:/core/uploads
+      - ./db:/core/db
+      - ./etc:/core/etc
+    ports:
+      - 8000:80
+    restart : on-failure
